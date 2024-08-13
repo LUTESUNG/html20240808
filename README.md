@@ -37,7 +37,8 @@
         Senior Product Designer
         <img src="" alt="">
     </header>
-    <article>
+    <main>
+        <article>
         experience
         Senior UI/UX Product Designer
         Enterprise name
@@ -98,6 +99,7 @@
         linkedin.com/in/yourname
         dribbble.com/yourname
     </aside>
+    </main>  
 </div>
 </body>
 </html>
