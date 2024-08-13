@@ -15,6 +15,7 @@
 ```
 
 ## 作業參考 index.html
+![workshop](image/YourName_CV.png)
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -109,7 +110,7 @@ HTML 標題元素用於定義網頁中的標題或主題，它們用來組織內
 ---
 ### HTML Site Map
 網站地圖 (Sitemap) 是一個文件，通常是 XML 格式，用於列出網站的所有頁面，並告訴搜索引擎網站的內容結構。這有助於搜索引擎更有效地抓取和索引網站的頁面。網站地圖可以包含有關每個 URL 的信息，如最後修改日期、變更頻率和相對於其他頁面的優先級。
-
+![site map](image/sitemap.png)
 ---
 
 ### HTML 標題元素
