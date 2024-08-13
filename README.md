@@ -17,15 +17,6 @@
 ## 作業參考 index.html
 ![workshop](image/YourName_CV.png)
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <div class="container">
     <header>
         <nav>
@@ -102,8 +93,6 @@
     </aside>
     </main>  
 </div>
-</body>
-</html>
 ```
 HTML 標題元素用於定義網頁中的標題或主題，它們用來組織內容，讓瀏覽器和用戶都能清楚地了解網頁結構。HTML 提供了六種標題元素，從 `<h1>` 到 `<h6>`，它們按照重要性依次遞減。
 
