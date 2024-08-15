@@ -5,6 +5,20 @@
 - [Join Slack](https://troie.slack.com/)
 - [install code eeditor](https://brackets.io/)
 
+## 我的第一支程式 index.html
+```
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello HTML.</h1>
+</body>
+</html>
+```
+
 ---
 ## HTML Site Map
 網站地圖 (Sitemap) 是一個文件，通常是 XML 格式，用於列出網站的所有頁面，並告訴搜尋引擎網站的內容結構。這有助於搜尋引擎更有效地抓取和索引網站的頁面。網站地圖可以包含有關每個 URL 的信息，如最後修改日期、變更頻率和相對於其他頁面的優先級。
@@ -56,25 +70,12 @@
 </urlset>
 ```
 ---
-## 基本語法 index.html
-```
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-```
 
-### 框架元素
-#### `<div>`
-HTML 中的一個**區塊級元素**，用來作為容器包裹其他 HTML 元素，從而控制頁面布局或應用 CSS 樣式。它通常用於將內容分組以便於樣式設計或腳本控制。
+## 框架元素
+### `<div>`
+HTML 中的一個**區塊級元素**，用來作為容器包裹其他 HTML 元素，從而控制頁面布局或應用 CSS 樣式。**它通常用於將內容分組以便於樣式設計或腳本控制**。
 
-##### 基本用法
+#### 基本用法
 ```html
 <div>
     <h1>這是標題</h1>
@@ -82,16 +83,16 @@ HTML 中的一個**區塊級元素**，用來作為容器包裹其他 HTML 元�
 </div>
 ```
 
-##### 特點
-1. **區塊級元素**：`<div>` 是一個區塊級元素，這意味著它會自動佔據一整行的寬度，其後的元素會顯示在下一行。
+#### 特點
+1. **區塊級元素**：`<div>` 是一個區塊級元素，它會佔據一整行的寬度，其後的元素會顯示在下一行。
 
-2. **無語意性**：`<div>` 本身不帶有任何語意，它僅僅是一個容器。因此，應用樣式或腳本是其主要用途。
+2. **無語意性**：`<div>` 不帶有任何語意，只是一個容器。因此，**應用樣式或腳本是其主要用途**。
 
-3. **組織和佈局**：在複雜的網頁佈局中，`<div>` 可以用來包裹和組織多個元素，並與 CSS 一起使用來設計網頁的結構和風格。
+3. **組織和佈局**：在複雜的網頁佈局中，`<div>` 可以**用來包裹和組織多個元素**，並與 CSS 一起使用來設計網頁的結構和風格。
 
 4. **通過 CSS 或 JavaScript 操作**：`<div>` 元素常與 CSS 和 JavaScript 結合使用，以控制其樣式或行為。
 
-##### 例子
+#### 例子
 ```html
 <div class="container">
     <header>這是頁首</header>
@@ -105,10 +106,10 @@ HTML 中的一個**區塊級元素**，用來作為容器包裹其他 HTML 元�
 在這個例子中，`<div>` 元素用來將頁面分為三個部分：`header`、`content` 和 `footer`。這些區塊可以通過 CSS 進行樣式設計或通過 JavaScript 進行動態操作。
 
 ---
-#### `<article>`
-HTML5 中引入的一個語意化元素，專門用來表示獨立的內容單元，如部落格文章、新聞報導、評論、論壇貼文等。這些內容單元通常具有自成一體的意義，並且可以在上下文中單獨存在。
+### `<article>`
+HTML5 的一個語意元素，專門用來表示**獨立的內容單元**，如部落格文章、新聞報導、評論、論壇貼文等。這些內容單元通常具有自成一體的意義，並且可以在上下文中單獨存在。
 
-##### 主要特點
+#### 主要特點
 
 1. **語意化**：
    - `<article>` 是語意化的 HTML 元素，這意味著它不僅僅是用來佈局或包裹內容的，還具有描述性，告訴瀏覽器和搜尋引擎該區塊的內容是獨立的可復用單位。
@@ -119,9 +120,9 @@ HTML5 中引入的一個語意化元素，專門用來表示獨立的內容單�
 3. **嵌套**：
    - 可以嵌套使用 `<article>` 元素。例如，一篇部落格文章的主體內容可以包裹在 `<article>` 中，而其內部的評論部分也可以用 `<article>` 來包裹，表示這些評論也是獨立的內容單元。
 
-##### 典型用法
+#### 常見用法
 
-##### 部落格文章
+#### 部落格文章
 ```html
 <article>
     <h2>這是部落格文章的標題</h2>
@@ -129,7 +130,7 @@ HTML5 中引入的一個語意化元素，專門用來表示獨立的內容單�
 </article>
 ```
 
-##### 新聞報導
+#### 新聞報導
 ```html
 <article>
     <header>
@@ -140,7 +141,7 @@ HTML5 中引入的一個語意化元素，專門用來表示獨立的內容單�
 </article>
 ```
 
-##### 嵌套的文章
+#### 嵌套的文章
 ```html
 <article>
     <h2>主要文章標題</h2>
@@ -154,10 +155,10 @@ HTML5 中引入的一個語意化元素，專門用來表示獨立的內容單�
 使用 `<article>` 元素可以幫助改善網頁的結構化數據，使內容更容易被搜尋引擎理解和索引，從而有助於 SEO 優化。
 
 ---
-#### `<section>` 
+### `<section>` 
 HTML5 中的一個語意化元素，用來表示 html 中的一個區塊或部分，這個區塊通常有其特定的主題或內容。`<section>` 常用於組織和劃分頁面內容，使得 html 結構更加清晰。
 
-##### 特點
+#### 特點
 
 1. **語意化元素**：
    - `<section>` 是一個語意化元素，意在表示 html 中的一個邏輯區塊或部分，這個部分通常圍繞著一個**共同的主題或內容**。
@@ -168,7 +169,7 @@ HTML5 中的一個語意化元素，用來表示 html 中的一個區塊或部�
 3. **組織內容**：
    - `<section>` 用來組織內容，使網頁更加清晰和結構化。例如，可以用來包裹網頁中的不同部分，如介紹、產品功能、聯絡方式等。
 
-##### 與其他元素的區別
+#### 與其他元素的區別
 
 - **與 `<div>` 的區別**：
   - `<div>` 是純粹的布局元素，無語意，通常用於將頁面內容分組並應用樣式或腳本。
@@ -178,9 +179,9 @@ HTML5 中的一個語意化元素，用來表示 html 中的一個區塊或部�
   - `<article>` 用於表示一個獨立的、自包含的內容單元，可以單獨存在或被引用，如一篇部落格文章或新聞報導。
   - `<section>` 更適合用來劃分 html 中的不同主題部分，而這些部分通常是 html 的一部分而非獨立內容。
 
-##### 典型用法
+#### 常見用法
 
-##### 範例 1：網頁內容的主要部分
+#### 範例 1：網頁內容的主要部分
 ```html
 <section>
     <h2>關於我們</h2>
@@ -192,13 +193,13 @@ HTML5 中的一個語意化元素，用來表示 html 中的一個區塊或部�
 </section>
 ```
 
-##### 範例 2：文章中的不同主題區塊
+#### 範例 2：文章中的不同主題區塊
 ```html
 <article>
     <h1>如何學習程式設計</h1>
     <section>
-        <h2>選擇一門編程語言</h2>
-        <p>學習程式設計的第一步是選擇一門編程語言...</p>
+        <h2>選擇一門程式語言</h2>
+        <p>學習程式設計的第一步是選擇一門程式語言...</p>
     </section>
     <section>
         <h2>建立學習計劃</h2>
@@ -206,26 +207,26 @@ HTML5 中的一個語意化元素，用來表示 html 中的一個區塊或部�
     </section>
 </article>
 ```
-使用 `<section>` 元素可以幫助你組織頁面結構，使其更加清晰易讀，並且更容易被搜尋引擎理解和索引。
+使用 `<section>` 元素可以幫助你組織頁面結構，使其更加清晰易讀，並且**更容易被搜尋引擎理解和索引**。
 
 ---
-#### `<header>` 
-HTML5 中的一個語意化元素，用來表示網頁或區塊的頭部內容。通常用於包含介紹性的內容或導航連結，例如標題、徽標、作者信息、導航菜單等。
+### `<header>` 
+HTML5 語意元素，用來表示網頁或區塊的頭部內容。通常用於包含介紹性的內容或導航連結，例如標題、LOGO、作者信息、導航選單等。
 
-##### 主要特點
+#### 主要特點
 
 1. **語意化元素**：
    - `<header>` 是語意化的元素，表示 html 或區段的開頭部分，通常包含主要的導航和介紹性內容。
 
 2. **可用於多個區段**：
-   - `<header>` 不僅可以用在網頁的頂部，還可以用在 `<article>`、`<section>`、`<aside>` 等元素內部，以表示這些區塊的頭部。
+   - `<header>` 不僅可以用在網頁的頂部，還**可以用在 `<article>`、`<section>`、`<aside>` 等元素內部**，以表示這些區塊的頭部。
 
 3. **常見用途**：
    - 包含網站或應用的名稱或標識（例如標誌或標題）。
-   - 包含主導航菜單。
-   - 包含搜索框或其他與網站頂部相關的內容。
+   - 包含主導航選單。
+   - 包含搜尋框或其他與網站頂部相關的內容。
 
-##### 典型用法
+#### 常見用法
 
 ##### 範例 1：網站的主要頭部
 ```html
@@ -246,30 +247,28 @@ HTML5 中的一個語意化元素，用來表示網頁或區塊的頭部內容�
 <article>
     <header>
         <h2>文章標題</h2>
-        <p>作者: John Doe | 發佈日期: 2024-08-12</p>
+        <p>作者: Troie Pan | 發佈日期: 2024-08-16</p>
     </header>
     <p>這是文章的內容...</p>
 </article>
 ```
 
-##### 使用場景
+#### 使用場景
 
 - **網站的頭部**：用於定義網站的頂部區域，通常包括標誌、標題、主導航等。
 - **文章或區塊的頭部**：用於定義特定文章、區段或頁面內部某個部分的頭部，通常包含該部分的標題和相關信息。
 
-##### 注意事項
-
-- **不包含腳本或樣式**：雖然技術上可以放置腳本或樣式標籤在 `<header>` 中，但通常不建議這樣做。應將腳本放在 `<body>` 結尾或 `<head>` 中，樣式放在 `<head>` 中。
+#### 注意事項
 
 - **避免重複使用**：在一個頁面中通常應該只有一個網站級別的 `<header>`，但可以在每個獨立的區段內部使用 `<header>`。
 
 使用 `<header>` 元素能夠幫助提高網頁結構的清晰度，使得內容更容易被搜尋引擎和輔助技術理解，從而提升網站的可訪問性和 SEO 效果。
 
 ---
-#### `<footer>` 
-HTML5 中的一個語意化元素，用來表示 html 或區塊的底部內容。通常包括有關頁面或區塊的附加信息，例如版權信息、聯絡方式、社交媒體連結、隱私政策、以及其他相關的輔助性內容。
+### `<footer>` 
+HTML5 語意元素，用來表示 html 或區塊的底部內容。通常包括有關頁面或區塊的附加信息，例如版權信息、聯絡方式、社交媒體連結、隱私政策、以及其他相關的輔助性內容。
 
-##### 主要特點
+#### 主要特點
 
 1. **語意化元素**：
    - `<footer>` 是語意化的 HTML 元素，用來描述頁面或區段的結尾部分，包含與該部分相關的輔助內容。
@@ -284,7 +283,7 @@ HTML5 中的一個語意化元素，用來表示 html 或區塊的底部內容�
    - 社交媒體連結
    - 版權或法律信息
 
-##### 典型用法
+#### 常見用法
 
 ##### 範例 1：網站的主要頁腳
 ```html
@@ -300,7 +299,7 @@ HTML5 中的一個語意化元素，用來表示 html 或區塊的底部內容�
 </footer>
 ```
 
-##### 範例 2：文章中的頁腳
+###### 範例 2：文章中的頁腳
 ```html
 <article>
     <h2>文章標題</h2>
@@ -312,12 +311,12 @@ HTML5 中的一個語意化元素，用來表示 html 或區塊的底部內容�
 </article>
 ```
 
-##### 使用場景
+#### 使用場景
 
 - **網站的底部區域**：通常包含網站的全局信息，如版權聲明、聯絡方式、隱私政策等。
 - **文章或區段的結尾部分**：可以用來顯示作者信息、發佈日期、相關標籤或其他附加信息。
 
-##### 注意事項
+#### 注意事項
 
 - **不要過度使用**：在一個頁面中，通常只有一個全局的 `<footer>`，用來表示整個頁面的結尾部分。不過，如果頁面內有多個獨立的文章或區塊，也可以在這些區塊中使用 `<footer>`。
 
@@ -326,10 +325,10 @@ HTML5 中的一個語意化元素，用來表示 html 或區塊的底部內容�
 使用 `<footer>` 能夠有效地組織頁面內容，使頁面結構更加清晰，並有助於提升網頁的可讀性和搜尋引擎優化效果。
 
 ---
-#### `<nav>` 
-HTML5 中的一個語意化元素，用來表示網頁中的導航部分。它通常包含指向其他頁面或當前頁面內其他部分的鏈接，如主導航菜單、分頁菜單、目錄等。
+### `<nav>` 
+HTML5 中的一個語意化元素，用來表示網頁中的導航部分。它通常包含指向其他頁面或當前頁面內其他部分的鏈接，如主導航選單、分頁菜單、目錄等。
 
-##### 主要特點
+#### 主要特點
 
 1. **語意化元素**：
    - `<nav>` 是一個語意化元素，表示頁面中包含導航鏈接的區域。
@@ -340,9 +339,9 @@ HTML5 中的一個語意化元素，用來表示網頁中的導航部分。它�
 3. **可以包含多個**：
    - 在同一個頁面中可以使用多個 `<nav>` 元素。例如，一個頁面可能有一個主導航欄、一個側邊欄導航以及頁腳中的導航鏈接，每個部分都可以使用 `<nav>` 元素來表示。
 
-##### 典型用法
+#### 常見用法
 
-##### 範例 1：主導航菜單
+##### 範例 1：主導航選單
 ```html
 <nav>
     <ul>
@@ -375,13 +374,13 @@ HTML5 中的一個語意化元素，用來表示網頁中的導航部分。它�
 </article>
 ```
 
-##### 使用場景
+#### 使用場景
 
 - **主導航欄**：用於定義網站的主導航部分，通常放在頁面的頂部。
 - **側邊欄導航**：用於頁面的側邊欄，方便用戶快速訪問特定的內容或部分。
 - **頁內目錄**：用於長文章或 html 的內部導航，使用戶可以快速跳轉到頁面內的特定部分。
 
-##### 注意事項
+#### 注意事項
 
 - **不要濫用**：僅當一組鏈接主要用於導航時，才應使用 `<nav>`。普通的內文鏈接或社交媒體鏈接等不應包裹在 `<nav>` 中。
 - **結合 ARIA 屬性**：在某些情況下，與 ARIA 屬性結合使用，可以進一步提高輔助技術的可訪問性。
@@ -389,10 +388,10 @@ HTML5 中的一個語意化元素，用來表示網頁中的導航部分。它�
 使用 `<nav>` 元素能夠幫助組織網站的導航結構，使得內容更加清晰，並有助於提升用戶體驗和網站的 SEO。
 
 ---
-#### `<main>` 
-HTML5 中的一個語意化元素，用來表示網頁或應用程式的主要內容。這個元素用於包裹頁面中主要的獨立內容，而這些內容應該與頁面的主要目的一致。
+### `<main>` 
+HTML5 語意元素，用來表示網頁或應用程式的主要內容。這個元素用於包裹頁面中主要的獨立內容，而這些內容應該與頁面的主要目的一致。
 
-##### 主要特點
+#### 主要特點
 
 1. **語意化元素**：
    - `<main>` 是語意化的，表示頁面的主要內容區域，通常包含與頁面主題相關的主要內容。
@@ -406,7 +405,7 @@ HTML5 中的一個語意化元素，用來表示網頁或應用程式的主要�
 4. **排除的內容**：
    - `<main>` 中不應包含側邊欄、頁頭（`<header>`）、頁腳（`<footer>`）或導航（`<nav>`）等重複出現的內容，而應僅包含頁面的核心內容。
 
-##### 典型用法
+#### 常見用法
 
 ##### 範例 1：基本結構
 ```html
@@ -432,7 +431,7 @@ HTML5 中的一個語意化元素，用來表示網頁或應用程式的主要�
 </body>
 ```
 
-##### 範例 2：含有多個區段的頁面
+#### 範例 2：含有多個區段的頁面
 ```html
 <main>
     <section>
@@ -446,12 +445,12 @@ HTML5 中的一個語意化元素，用來表示網頁或應用程式的主要�
 </main>
 ```
 
-##### 使用場景
+#### 使用場景
 
 - **主要內容區域**：頁面中與該頁主要功能或主題相關的內容。
 - **跳過導航鏈接**：輔助技術可以幫助用戶跳過頁頭或導航部分，直接定位到 `<main>` 區域中的內容。
 
-##### 注意事項
+#### 注意事項
 
 - **唯一性**：每個頁面應該只包含一個 `<main>` 元素，這有助於輔助技術和搜尋引擎更好地理解頁面結構。
 - **避免嵌套**：不要在 `<main>` 中嵌套其他的頁面級別的元素，如 `<header>`、`<footer>` 或 `<nav>`。
@@ -459,21 +458,21 @@ HTML5 中的一個語意化元素，用來表示網頁或應用程式的主要�
 使用 `<main>` 元素可以有效提升網頁的語意化結構，並且有助於提升網站的可訪問性和 SEO 效果。
 
 ---
-#### `<aside>` 
-HTML5 中的一個語意化元素，用來表示與頁面主內容相關的次要內容或附加信息。通常用於顯示不屬於主要內容，但與其相關的側邊欄、附加資訊、廣告或引用的文字等。
+### `<aside>` 
+HTML5 語意化元素，用來表示與頁面**主內容相關的次要內容或附加信息**。通常用於顯示不屬於主要內容，但與其相關的側邊欄、附加資訊、廣告或引用的文字等。
 
-##### 主要特點
+#### 主要特點
 
 1. **語意化元素**：
    - `<aside>` 是一個語意化元素，表示與主內容相關但相對次要的部分，如側邊欄、相關連結或附加資訊。
 
 2. **用於補充內容**：
-   - 這個元素通常包含與頁面主要內容相關但非核心的資訊，如附加說明、引用、相關鏈接、作者簡介等。
+   - 這個元素通常包含與頁面**主要內容相關**但非核心的資訊，如附加說明、引用、相關鏈接、作者簡介等。
 
 3. **靈活的定位**：
    - `<aside>` 可以放置在 html 的任何部分，無論是與主內容並排，還是在文章內部，以提供補充信息。
 
-##### 典型用法
+#### 常見用法
 
 ##### 範例 1：頁面側邊欄
 ```html
@@ -499,18 +498,17 @@ HTML5 中的一個語意化元素，用來表示與頁面主內容相關的次�
 </article>
 ```
 
-##### 使用場景
+#### 使用場景
 
 - **側邊欄**：在頁面的一側顯示相關鏈接、附加內容或廣告等。
 - **補充信息**：用來展示與主內容相關的補充說明、引用或背景資料。
 
-##### 注意事項
+#### 注意事項
 
 - **與主要內容的關聯**：`<aside>` 中的內容應該與主內容有一定的關聯性，但不應是主內容的核心部分。
 - **不要用於不相關的信息**：如果內容與頁面的主題完全無關，不應使用 `<aside>`，而應考慮其他元素或結構。
 
 使用 `<aside>` 元素可以幫助組織頁面中的附加信息，使主內容更加突出，同時提供相關的補充資料或背景信息。
-
 
 ---
 ### 作業參考 index.html
@@ -528,69 +526,69 @@ HTML5 中的一個語意化元素，用來表示與頁面主內容相關的次�
         Senior Product Designer
         <img src="" alt="">
     </header>
-    <main>
+    <div class="content">
         <article>
-        experience
-        Senior UI/UX Product Designer
-        Enterprise name
-        Aug 2018 - Present - 1 year, Paris
-        Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.
+            experience
+            Senior UI/UX Product Designer
+            Enterprise name
+            Aug 2018 - Present - 1 year, Paris
+            Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.
 
-        UI/UX Product Designer
-        Enterprise name
-        Aug 2013 - Aug 2018 - 5 years, Paris
-        Lead the UI design with the accountability of the design system, collaborated with product and development teams on core projects to improve product interfaces and experiences.
+            UI/UX Product Designer
+            Enterprise name
+            Aug 2013 - Aug 2018 - 5 years, Paris
+            Lead the UI design with the accountability of the design system, collaborated with product and development teams on core projects to improve product interfaces and experiences.
 
-        UI Designer
-        Enterprise name
-        Aug 2012 - jul 2013 - 1 year, Paris
-        Designed mobile UI applications for Orange R&D departement, BNP Paribas, La Poste, Le Cned...
+            UI Designer
+            Enterprise name
+            Aug 2012 - jul 2013 - 1 year, Paris
+            Designed mobile UI applications for Orange R&D departement, BNP Paribas, La Poste, Le Cned...
 
-        Graphic Designer
-        Enterprise name
-        Sept 2010 - jul 2012 - 2 years, Paris
-        Designed print and web applications for Pau Brasil, Renault,
-        Le théatre du Mantois, La mairie de Mantes la Ville...
+            Graphic Designer
+            Enterprise name
+            Sept 2010 - jul 2012 - 2 years, Paris
+            Designed print and web applications for Pau Brasil, Renault,
+            Le théatre du Mantois, La mairie de Mantes la Ville...
 
-        education
-        Bachelor European in Graphic Design
-        School name
-        2009 - 2010, Bagnolet
+            education
+            Bachelor European in Graphic Design
+            School name
+            2009 - 2010, Bagnolet
 
-        BTS Communication Visuelle option Multimédia
-        School name
-        2007 - 2009, Bagnolet
-    </article>
-    <aside>
-        yourmail@gmail.com
-        +33 6 33 33 33 33
-        Vernouillet
+            BTS Communication Visuelle option Multimédia
+            School name
+            2007 - 2009, Bagnolet
+        </article>
+        <aside>
+            yourmail@gmail.com
+            +33 6 33 33 33 33
+            Vernouillet
 
-        Industry Knowledge
-        Product Design
-        User Interface
-        User Experience
-        Interaction Design
-        Wireframing
-        Rapid Prototyping
-        Design Research
+            Industry Knowledge
+            Product Design
+            User Interface
+            User Experience
+            Interaction Design
+            Wireframing
+            Rapid Prototyping
+            Design Research
 
-        Tools & Technologies
-        Figma, Sketch, Protopie, Framer, Invision, Abstract, Zeplin, Google Analytics, Amplitude, Fullstory...
+            Tools & Technologies
+            Figma, Sketch, Protopie, Framer, Invision, Abstract, Zeplin, Google Analytics, Amplitude, Fullstory...
 
-        Other Skills
-        HTML, CSS, jQuery
+            Other Skills
+            HTML, CSS, jQuery
 
-        Languages
-        French (native)
-        English (professionnal)
+            Languages
+            French (native)
+            English (professionnal)
 
-        Social
-        yoursite.com
-        linkedin.com/in/yourname
-        dribbble.com/yourname
-    </aside>
-    </main>  
+            Social
+            yoursite.com
+            linkedin.com/in/yourname
+            dribbble.com/yourname
+        </aside>
+    </div>  
 </div>
 ```
 HTML 標題元素用於定義網頁中的標題或主題，它們用來組織內容，讓瀏覽器和用戶都能清楚地了解網頁結構。HTML 提供了六種標題元素，從 `<h1>` 到 `<h6>`，它們按照重要性依次遞減。
