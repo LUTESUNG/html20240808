@@ -4,6 +4,8 @@
 - [My Web Site](https://iam.troie.fun)
 - [Join Slack](https://troie.slack.com/)
 - [install code editor](https://brackets.io/)
+- [github](https://github.com/)
+- [github desktop](https://github.com/apps/desktop)
 - [MDN Web Docs](https://developer.mozilla.org/zh-TW/docs/Web/HTML)
 
 ## 我的第一支程式 index.html
@@ -1157,7 +1159,7 @@ HTML 中的「空元素」是指那些不包含任何內容（例如文本或其
 HTML 符號代碼和實體（HTML Symbol Codes and Entities）允許在網頁中顯示特定的符號或特殊字符。這些符號通常是無法直接在 HTML 中使用的，因為它們可能與 HTML 語法有衝突或無法在所有瀏覽器中正確顯示。因此，HTML 實體提供了一種方式來顯示這些字符。
 
 ---
-### 特殊符號 
+### 特殊符號 `& + € ©`
 - [HTML symbol codes and entities](https://www.toptal.com/designers/htmlarrows/)
 
 1. **空格和控制字符**：
@@ -1210,7 +1212,7 @@ HTML 符號代碼和實體（HTML Symbol Codes and Entities）允許在網頁中
 - **兼容性**：雖然大多數實體在現代瀏覽器中都能正常顯示，但某些實體可能在舊版瀏覽器或不同的字符編碼設置下不一致。因此，最好測試不同的情況。
 
 ---
-### 表格
+### 表格 `<table>`
 HTML 中的 `<table>` 元素用來表示表格數據，允許在網頁中顯示有組織的行和列。表格通常用於顯示結構化的信息，如資料表、時間表等。
 
 #### 基本結構
@@ -1274,3 +1276,138 @@ HTML 中的 `<table>` 元素用來表示表格數據，允許在網頁中顯示�
 - **避免表格佈局**：盡量避免使用表格進行佈局，這樣做會讓 HTML 結構更加複雜，且不利於 SEO 和可訪問性。建議使用 CSS Flexbox 或 Grid 來進行佈局。
 
 ---
+### 表單 `<form>`
+HTML 表單（Form）是用來收集用戶輸入資料並將其傳送到伺服器處理的一個網頁元素。以下是使用 HTML 表單的基本說明：
+
+### 1. 建立表單 `<form>`
+
+表單的基本結構由 `<form>` 標籤包裹起來，並可設置一些屬性來指定表單的行為：
+
+```html
+<form action="submit_url" method="post">
+  <!-- 表單元素 -->
+</form>
+```
+
+- **`action`**: 指定表單數據提交的目的地（URL）。
+- **`method`**: 指定數據傳輸的方式，一般為 `"post"` 或 `"get"`。
+
+### 2. 表單元素
+
+表單內可以包含各種不同的輸入元素：
+
+#### 2.1. 文本輸入 `<input type="text">`
+
+用於輸入單行文本：
+
+```html
+<label for="username">用戶名:</label>
+<input type="text" id="username" name="username">
+```
+
+#### 2.2. 密碼輸入 `<input type="password">`
+
+用於輸入密碼，輸入的內容會被隱藏：
+
+```html
+<label for="password">密碼:</label>
+<input type="password" id="password" name="password">
+```
+
+#### 2.3. 單選按鈕 `<input type="radio">`
+
+讓用戶在多個選項中選擇一個：
+
+```html
+<p>性別:</p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">男</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">女</label>
+```
+
+#### 2.4. 複選框 `<input type="checkbox">`
+
+讓用戶選擇多個選項：
+
+```html
+<p>興趣:</p>
+<input type="checkbox" id="sports" name="interest" value="sports">
+<label for="sports">運動</label><br>
+<input type="checkbox" id="music" name="interest" value="music">
+<label for="music">音樂</label>
+```
+
+#### 2.5. 下拉選單 `<select>`
+
+讓用戶從下拉列表中選擇一個選項：
+
+```html
+<label for="country">國家:</label>
+<select id="country" name="country">
+  <option value="taiwan">台灣</option>
+  <option value="japan">日本</option>
+  <option value="usa">美國</option>
+</select>
+```
+
+#### 2.6. 文本區域 `<textarea>`
+
+用於輸入多行文本：
+
+```html
+<label for="message">留言:</label>
+<textarea id="message" name="message" rows="4" cols="50"></textarea>
+```
+
+#### 2.7. 提交按鈕 `<input type="submit">`
+
+用來提交表單數據到伺服器：
+
+```html
+<input type="submit" value="提交">
+```
+
+### 3. 表單驗證
+
+HTML 提供了基本的表單驗證功能，可以使用以下屬性：
+
+- **`required`**: 確保用戶在提交前填寫此字段。
+- **`pattern`**: 使用正則表達式驗證輸入內容。
+- **`maxlength`**: 限制輸入的最大字數。
+
+範例：
+
+```html
+<input type="email" id="email" name="email" required>
+```
+
+### 4. 完整範例
+
+```html
+<form action="/submit_form" method="post">
+  <label for="username">用戶名:</label>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <label for="password">密碼:</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <label for="gender">性別:</label>
+  <input type="radio" id="male" name="gender" value="male">男
+  <input type="radio" id="female" name="gender" value="female">女<br><br>
+
+  <label for="country">國家:</label>
+  <select id="country" name="country">
+    <option value="taiwan">台灣</option>
+    <option value="japan">日本</option>
+    <option value="usa">美國</option>
+  </select><br><br>
+
+  <label for="message">留言:</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="提交">
+</form>
+```
+
+這是 HTML 表單使用的基本介紹，使用表單可以讓用戶將數據發送到伺服器，並且可以通過不同的表單元素來收集各種不同類型的資料。
